@@ -25,7 +25,7 @@ To install and run the project, ensure you have the following dependencies:
 - **Python 3.8+**
 - **Flask** - Micro web framework for serving the API
 - **Machine Learning Libraries**:
-  - scikit-learn
+  - scikit-learn 1.2.2
   - pandas
   - numpy
 
