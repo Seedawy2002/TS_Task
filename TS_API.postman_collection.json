@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "c252e4b6-eb64-49c3-a7ce-37fef044227f",
+		"name": "TS_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39130783"
+	},
+	"item": [
+		{
+			"name": "EndPoint",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"dataset_id\": 74,\r\n\"values\": [\r\n    {\"timestamp\": \"2021-12-16T00:00:00\", \"value\": -1.109486963},\r\n    {\"timestamp\": \"2021-12-16T08:00:00\", \"value\": -0.991722905},\r\n    {\"timestamp\": \"2021-12-16T16:00:00\", \"value\": -1.177555847},\r\n    {\"timestamp\": \"2021-12-17T00:00:00\", \"value\": -0.348418624},\r\n    {\"timestamp\": \"2021-12-17T08:00:00\", \"value\": -1.070840259},\r\n    {\"timestamp\": \"2021-12-17T16:00:00\", \"value\": -1.051322264},\r\n    {\"timestamp\": \"2021-12-18T00:00:00\", \"value\": -1.074592453},\r\n    {\"timestamp\": \"2021-12-18T08:00:00\", \"value\": -1.079459883},\r\n    {\"timestamp\": \"2021-12-18T16:00:00\", \"value\": -0.881024005},\r\n    {\"timestamp\": \"2021-12-19T00:00:00\", \"value\": -0.895193922},\r\n    {\"timestamp\": \"2021-12-19T08:00:00\", \"value\": -0.981916427},\r\n    {\"timestamp\": \"2021-12-19T16:00:00\", \"value\": -1.100597617},\r\n    {\"timestamp\": \"2021-12-20T00:00:00\", \"value\": -1.045543002},\r\n    {\"timestamp\": \"2021-12-20T08:00:00\", \"value\": -0.918029862},\r\n    {\"timestamp\": \"2021-12-20T16:00:00\", \"value\": -0.988305521},\r\n    {\"timestamp\": \"2021-12-21T00:00:00\", \"value\": -1.167092854},\r\n    {\"timestamp\": \"2021-12-21T08:00:00\", \"value\": -0.841178824},\r\n    {\"timestamp\": \"2021-12-21T16:00:00\", \"value\": -0.994983217},\r\n    {\"timestamp\": \"2021-12-22T00:00:00\", \"value\": -1.06133442},\r\n    {\"timestamp\": \"2021-12-22T08:00:00\", \"value\": 0.894088321}\r\n]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/process",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"process"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
