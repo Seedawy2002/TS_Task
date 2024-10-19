@@ -105,8 +105,7 @@ def preprocess_data(df):
     return df
 
 # Function to load a saved model
-def load_model(file_name):
-    model_load_path = f"saved_models/{file_name}.pkl"
+def load_model(model_load_path):
     if os.path.exists(model_load_path):
         model = joblib.load(model_load_path)
         print(f"Model loaded from {model_load_path}")
@@ -162,7 +161,11 @@ def process_json():
     # print(features)
 
     # Load the correct model based on dataset_id
-    model_path = rf'C:\Users\Mariam Magdy\OneDrive\Desktop\ts_task\models\train_{dataset_id}.pkl'
+    import os
+
+    base_dir = os.path.dirname(os.path.abspath(__file__))  # Get the directory of the current script
+    model_path = os.path.join(base_dir, 'models', f'train_{dataset_id}.pkl')
+    
     try:
         model = joblib.load(model_path)
     except FileNotFoundError:
