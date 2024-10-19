@@ -16,9 +16,9 @@ This project is part of a **Time Series Forecasting Task**, which involves devel
 ├── min_entries_inference_dataset_with_ids.csv   # CSV file with dataset details
 ├── requirements.txt   # Dependencies required to run the project
 ├── server.py   # Flask application hosting the API
-├── ts-notebook.ipynb # Pipeline Work
-├── models # saved models
-├── Task.md # Task description
+├── ts-notebook.ipynb  # Pipeline work
+├── models             # Saved models directory (instructions below)
+├── Task.md            # Task description
 ```
 
 ### Requirements
@@ -34,6 +34,22 @@ These dependencies are included in the `requirements.txt` file. You can install 
 
 ```bash
 pip install -r requirements.txt
+```
+
+### Downloading and Setting Up the Saved Models
+
+1. Visit the following link to download the pre-trained models: [Saved Models - Kaggle](https://www.kaggle.com/code/mariamelseedawy/ts-notebook/output)
+2. Download the `saved_models` folder.
+3. Rename the `saved_models` folder to `models`.
+4. Place the renamed `models` folder in the root directory of the cloned project.
+
+Your project folder structure should look like this:
+
+```
+/your-project
+    ├── models
+    ├── other_project_files
+    └── ...
 ```
 
 ### Running the Application
@@ -55,7 +71,7 @@ pip install -r requirements.txt
    ```bash
    python server.py
    ```
-   By default, the server will run on `localhost:5000/process`. You can use Postman (import the provided api json file) or any API testing tool to interact with the API.
+   By default, the server will run on `localhost:5000/process`. You can use Postman (import the provided API JSON file) or any API testing tool to interact with the API.
 
 ### API Usage
 
