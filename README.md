@@ -16,8 +16,9 @@ This project is part of a **Time Series Forecasting Task**, which involves devel
 ├── min_entries_inference_dataset_with_ids.csv   # CSV file with dataset details
 ├── requirements.txt   # Dependencies required to run the project
 ├── server.py   # Flask application hosting the API
-├── TS_Notebook # Pipeline Work
+├── ts-notebook.ipynb # Pipeline Work
 ├── models # saved models
+├── Task.md # Task description
 ```
 
 ### Requirements
