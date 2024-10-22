@@ -75,7 +75,7 @@ Your project folder structure should look like this:
 
 ### API Usage
 
-- **Endpoint**: `POST /predict`
+- **Endpoint**: `POST /process`
 - **Description**: Make a time series forecast based on the input data.
 
 #### Request Body Example:
