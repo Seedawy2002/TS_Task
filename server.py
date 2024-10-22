@@ -139,7 +139,7 @@ def process_json():
     # Define all feature columns for prediction (use all generated features)
     feature_columns = ['lag_1','lag_2','lag_3','rate_of_change', 'rate_of_change_2', 
            'rolling_mean_5', 'rolling_std_5', 'rolling_min_5', 'rolling_max_5', 
-           'ema_5', 'z_score',
+           'ema_5', 'z_score', 'is_anomaly',
            'hour', 'day_of_week', 'day_of_month', 'month', 
            'hour_sin', 'hour_cos', 'day_of_week_sin', 'day_of_week_cos']
     
