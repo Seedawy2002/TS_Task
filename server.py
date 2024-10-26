@@ -71,7 +71,14 @@ def preprocess_data(df):
     df.ffill(inplace=True)
     
     # 5. Add Outlier Detection (Z-score)
-    df['z_score'] = (df['value'] - df['value'].mean()) / df['value'].std()
+    # Calculate Z-score for outlier detection
+    std_value = df['value'].std()
+
+    # Avoid division by zero by using a small value if the standard deviation is zero
+    if std_value == 0:
+        std_value = 1e-8  # Small constant to avoid NaN
+
+    df['z_score'] = (df['value'] - df['value'].mean()) / std_value
     df['is_anomaly'] = (df['z_score'].abs() > 3).astype(int)  # Mark anomalies where Z-score exceeds threshold
 
     # 6. Add Time-Based Features (Hour, Day, Month)
